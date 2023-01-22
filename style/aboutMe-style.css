@@ -1,0 +1,103 @@
+.container {
+  display: grid;
+  grid-template-columns: 90vw;
+  grid-template-rows: 70px 200px 300px 100px;
+  grid-template-areas:
+  "hd"
+  "sd"
+  "main"
+  "ft";
+}
+
+.about-me-header {
+  text-align: center;
+  grid-area: hd;
+}
+
+.about-me-sidebar {
+  grid-area: sd;
+}
+
+.about-me-content {
+  grid-area: main;
+}
+
+.about-me-footer {
+  grid-area: ft;
+}
+
+.about-me-sidebar-content {
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.about-me-sidebar-button {
+  margin-top: 7px;
+}
+
+.about-me {
+    padding: 10px;
+}
+
+.about-me-text {
+  padding: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about-me-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about-me-img img {
+  width: 100%
+}
+
+@media(min-width: 600px){
+
+  .container {
+    display: grid;
+    grid-template-columns: 20vw 40vw 30vw;
+    grid-template-rows: 70px 500px 100px;
+    grid-template-areas:
+    "e hd hd hd hd hd hd hd"
+    "sd main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+  }
+
+  .about-me-header {
+    text-align: center;
+    grid-area: hd;
+   }
+
+  .about-me-sidebar {
+    grid-area: sd;
+  }
+
+  .about-me-content {
+    grid-area: main;
+  }
+
+  .about-me-footer {
+    grid-area: ft;
+  }
+
+  .about-me-sidebar-content {
+    text-align: left;
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .about-me-sidebar-button {
+    margin-top: 7px;
+   }
+}

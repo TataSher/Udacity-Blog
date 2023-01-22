@@ -1,0 +1,76 @@
+@import "main-style.css";
+@import "aboutMe-style.css";
+
+body
+{
+  padding: 20px 50px;
+  font-family: "Questrial", "Arial", sans-serif;
+  color: rgb(55, 53, 47);
+}
+
+a {
+  color: rgb(55, 53, 47);
+  text-underline-offset: 2px;
+}
+
+b {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.circle {
+  margin: 20px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  color: rgb(55, 53, 47);
+  line-height: 0;
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+}
+
+.circle-txt {
+  position: absolute; 
+  bottom: 50%;
+  width: 100%;
+  text-align:center;
+  font-weight: bold;
+}
+
+.button {
+  color: rgb(55, 53, 47);
+  padding: 12px;
+  border: none;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+}
+
+.button-default {
+  background:rgb(255, 255, 136);
+}
+
+.button-disabled {
+  color:rgb(185, 185, 185);
+  background:rgb(255, 255, 136);
+}
+
+.button-pressed {
+  background:rgb(255, 216, 132);
+}
+
+#yellow {
+  background: rgb(255, 255, 136);
+}
+
+#green {
+  background: rgb(200, 255, 174);
+}
+
+#orange {
+  background: rgb(255, 216, 132);
+}
+
+#pink {
+  background: rgb(255, 172, 237);
+}

@@ -1,0 +1,150 @@
+.container {
+  display: grid;
+  grid-template-columns: 90vw;
+  grid-template-rows: 70px 200px 1350px 100px;
+  grid-template-areas:
+  "hd"
+  "sd"
+  "main"
+  "ft";
+}
+
+.header {
+  text-align: center;
+  grid-area: hd;
+}
+
+.sidebar {
+  grid-area: sd;
+}
+
+.content {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: ft;
+}
+
+.sidebar-content {
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.sidebar-button {
+  margin-top: 7px;
+}
+
+.nested-grid {
+  display: grid;
+  grid-template-columns: repeat(1 , 100%);
+  grid-template-rows: repeat(6, 225px);
+}
+
+.stickie {
+  height: 180px;
+  width: 180px;
+  box-shadow: rgba(99, 99, 99, 0.4) 0px 5px 5px 0px;
+  padding: 10px;
+  font-family: 'Kalam', cursive;
+  margin: 0 auto;
+}
+
+.stickie-title {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.stickie-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+img {
+  width: 100%
+}
+
+@media (min-width: 600px) and (max-width:900px) {
+
+  .container {
+    display: grid;
+    grid-template-columns: 20vw 40vw 30vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:
+    "e hd hd hd hd hd hd hd"
+    "sd main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+  }
+
+  .sidebar {
+    grid-area: sd;
+  }
+
+  .content {
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: ft;
+  }
+
+  .sidebar-content {
+    text-align: left;
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .nested-grid {
+    display: grid;
+    grid-template-columns: repeat(2 , 50%);
+    grid-template-rows: repeat(3, 225px);
+  }
+}
+
+@media(min-width: 900px){
+
+  .container {
+    display: grid;
+    grid-template-columns: 20vw 40vw 30vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:
+    "e hd hd hd hd hd hd hd"
+    "sd main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+  }
+
+  .sidebar {
+    grid-area: sd;
+  }
+
+  .content {
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: ft;
+  }
+
+  .sidebar-content {
+    text-align: left;
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .nested-grid {
+    display: grid;
+    grid-template-columns: repeat(3 , 33%);
+    grid-template-rows: repeat(2, 225px);
+  }
+
+}
+
+
